@@ -1,0 +1,178 @@
+@media only screen and (min-width: 36.01em) and (max-width: 53em) {
+
+    :root {
+        --hero-color: #31333B;
+        --element-color: #494B58;
+        --hightlight-color: #FBFF00;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            left: 50vw;
+            opacity: 20%;
+        }
+        to {
+            left: 40vw;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes fadeInTop {
+        from {
+            top: 3rem;
+            left: 2rem;
+            opacity: 20%;
+        }
+        to {
+            top: 7rem;
+            left: 2rem;
+            opacity: 100%;
+        }
+    
+    }
+
+    /*header*/
+
+    #menu img {
+
+        width: 5rem;
+    }
+
+    .logo {
+
+        width: 5rem;
+    }
+
+    #menu ul {
+
+        font-size: 1.5rem;
+    }
+
+    #menu ul a {
+
+        padding: 1rem;
+        background: linear-gradient(var(--hero-color), var(--hero-color) 50%, var(--hightlight-color) 50%, var(--hightlight-color));
+        background-size: 100% 200%;
+        /*trasition effect for background*/
+        transition: background .5s;
+    }
+
+    #menu a:hover {
+
+        color: #31333B;
+        background-position: 100% 100%;
+        transition: .5s;
+    }
+
+    /*Main text on the hero section*/
+
+    h1, h2 {
+
+        font-size: 5rem;
+    }
+
+    #hero button {
+
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+
+    /*Main image on the header section*/
+
+    header #profilePicute {
+
+        margin: 0;
+        animation-name: fadeInRight;
+        animation-duration: 1.5s;
+        margin-top: 15%
+    }
+
+    #redes {
+
+        display: flex;
+        width: fit-content;
+        margin: 2vw;
+    }
+
+    #redes a {
+
+        
+        width: -webkit-fill-available;
+        margin: 0 .5rem;
+        display: inline-block;
+    }
+
+    #redes img {
+
+        width: 4rem;
+        height: auto;
+    }
+
+    /*My skills section*/
+
+    #skills h3 {
+
+        grid-area: 1 / span 3;
+        font-size: 3rem;
+    }
+
+    .container {
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #skills img {
+
+        width: 12vw;
+    }
+
+    #portfolio h3 {
+
+        grid-area: 1 / span 2;
+        font-size: 3rem;
+    }
+
+    #portfolioContainer {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .page {
+
+        margin: 0 2rem;
+    }
+
+    .page:last-child {
+
+        border-bottom: solid white 2px;
+    }
+
+    /*Styling the form*/
+
+    #contactForm h3 {
+
+        font-size: 3rem;
+    }
+
+    #contactForm input[type="text"],
+    #contactForm input[type="email"],
+    #contactForm textarea {
+
+    padding: 1rem;
+    font-size: 1.1rem;
+
+    }
+
+    #contactForm input[type="submit"] {
+
+        font-size: 1.5rem;
+        width: 96%;
+    }
+
+    footer {
+
+        font-size: 1.5rem;
+    }
+
+    
+}

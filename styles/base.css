@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --hero-color: #31333B;
+    --element-color: #494B58;
+    --hightlight-color: #FBFF00;
+}
+
+@keyframes fadeInRight {
+    from {
+        left: 50vw;
+        opacity: 20%;
+    }
+    to {
+        left: 40vw;
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInTop {
+    from {
+        top: 3rem;
+        left: 2rem;
+        opacity: 20%;
+    }
+    to {
+        top: 7rem;
+        left: 2rem;
+        opacity: 100%;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--hero-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--hero-color);
+    color: white;
+    margin: 0 auto;
+    border-bottom: 3px solid #31333B;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+#logo {
+    display: inline-block;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#menu ul a {
+    width: -webkit-fill-available;
+    border-bottom: solid 1px var(--hightlight-color);
+    color: white;
+    text-decoration: none;
+    margin: 0 .5rem;
+    padding: .7rem 0;
+    display: inline-block;
+}
+
+.logo {
+    width: 4rem;
+}
+
+#hero {
+    position: absolute;
+    text-align: left;
+    top: 7rem;
+    left: 2rem;
+    z-index: 1;
+    animation-name: fadeInTop;
+    animation-duration: 1.5s;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--hightlight-color);
+}
+
+#hero button {
+    background-image: none;
+    background-color: transparent;
+    border: 3px var(--hightlight-color) solid;
+    color: var(--hightlight-color);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+
+header #profilePicute {
+
+    width: 60%;
+    top: 3rem;
+    left: 40vw;
+    position: relative;
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
+    overflow: hidden;
+    margin: 20% 0 15% 0;
+}
+
+
+#redes {
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 1rem 2rem 2rem 0;
+}
+
+#redes a {
+    display: inline-block;
+    width: fit-content;
+}
+
+#redes img {
+
+    width: 15vw;
+    height: 15vw;
+}
+
+/*Styling the skylls section*/
+
+#skills {
+    box-shadow: 0px -10px 25px #888, 0px -10px 25px #888;
+}
+
+.container {
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem;
+}
+
+#skills h3, #portfolio h3, h3 {
+    text-align: center;
+    grid-area: 1 / span 2;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--hightlight-color);
+}
+
+.skill {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+    background-color: var(--element-color);
+}
+
+.skill img {
+    width: 20vw;
+}
+
+/*Styling the portfolio section*/
+
+#portfolio {
+    background-color: #33353f;
+    
+}
+
+#portfolioContainer {
+
+    display: grid;
+    grid-template-columns: auto;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#portfolio h3 {
+    grid-area: 1;
+    padding: 2rem;
+}
+
+.page {
+    padding: 2rem 1rem;
+    border-bottom: solid white 2px;
+    border-radius: 0;
+}
+
+.page:last-child {
+    border-bottom: none;
+}
+
+.page img {
+    width: 100%;
+}
+
+/*Styling the contact form section*/
+
+#contactForm {
+    
+    margin: 1rem 0;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 2rem 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+label {
+    color: var(--titleColor);
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    margin: 5px 0 1rem 0;
+    resize: none;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#contactForm input[type="submit"] {
+
+    display: block;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    background-color: var(--hightlight-color);
+    color: black;
+    border-radius: 6px;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+/*Styling the footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hero-color);
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+footer p {
+    padding-top: 1rem;
+}
+
+footer img {
+
+    width: 2.5rem;
+}
+
+footer #redes {
+
+    margin: 0;
+}
+
+footer a, footer #redes a {
+    padding: .5rem;
+    margin: .5rem;
+}

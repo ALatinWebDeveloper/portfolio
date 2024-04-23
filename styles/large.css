@@ -1,0 +1,169 @@
+@media only screen and (min-width: 53.1em) {
+
+    @keyframes fadeInRight {
+        from {
+            left: 50vw;
+            opacity: 20%;
+        }
+        to {
+            left: 45vw;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes fadeInTop {
+        from {
+            top: 5vw;
+            left: 15%;
+            opacity: 20%;
+        }
+        to {
+            top: 7vw;
+            left: 15%;
+            opacity: 100%;
+        }
+    
+    }
+
+    /*header*/
+
+    #menu img {
+
+        width: 5rem;
+    }
+
+    #menu ul {
+
+        font-size: 2rem;
+    }
+
+    #menu ul a {
+
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+        background: linear-gradient(var(--hero-color), var(--hero-color) 50%, var(--hightlight-color) 50%, var(--hightlight-color));
+        background-size: 100% 200%;
+        /*trasition effect for background*/
+        transition: background .5s;
+    }
+
+    #menu a:hover {
+
+        color: #31333B;
+        background-position: 100% 100%;
+        transition: .5s;
+    }
+
+    h1, h2 {
+
+        font-size: 6rem;
+    }
+
+    #hero {
+
+        width: 80%;
+        top: 7vw;
+        left: 15%;
+        margin-top: 2vw;
+    }
+
+    #hero button {
+
+        font-size: 2.5rem;
+        margin-top: 5rem;
+    }
+
+    header #profilePicute {
+
+        width: 43vw;
+        margin: 0;
+        animation-name: fadeInRight;
+        animation-duration: 1.5s;
+        left: 45vw;
+        top: 3vw;
+    }
+
+    #redes {
+
+        display: flex;
+        width: fit-content;
+        margin: 0vw 0  0 14%;
+    }
+
+    #redes a {
+
+        width: -webkit-fill-available;
+        margin: 0 .5rem;
+        display: inline-block;
+    }
+
+    #redes img {
+
+        width: 4rem;
+        height: auto;
+    }
+
+    #redes {
+        margin-right: 10%;
+    }
+
+    /*Skills section*/
+
+    #skills {
+
+        grid-template-columns: 20% 20% 20%;
+        margin: 0 auto;
+        box-shadow: 0px -20px 20px #888, 0px -20px 20px #888;
+    }
+
+    #skills h3 {
+
+        grid-area: 1 / span 3;
+    }
+
+    .container {
+
+        
+        display: grid;
+        width: 50%;
+        margin: 2rem auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: var(--hero-color);
+    }
+
+    #skills img {
+
+        width: 7vw;
+    }
+
+    #skills h3, #portfolio h3 {
+
+        font-size: 5rem;
+    }
+
+    #portfolio h3 {
+
+        grid-area: 1 / span 4;
+    }
+
+    #portfolio {
+
+        grid-template-columns: auto;
+        
+    }
+
+    .page {
+
+        border-bottom: none;
+    }
+
+    footer {
+
+        justify-content: space-evenly;
+        flex-direction: row;
+        border-top: solid white 2px;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}
