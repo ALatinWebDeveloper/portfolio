@@ -81,6 +81,7 @@
 
     header #profilePicute {
 
+        width: 54vw;
         margin: 0;
         animation-name: fadeInRight;
         animation-duration: 1.5s;
