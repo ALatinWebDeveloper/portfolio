@@ -124,7 +124,7 @@ h1 {
 
 header #profilePicute {
 
-    width: 60%;
+    width: 70%;
     top: 3rem;
     left: 40vw;
     position: relative;
@@ -152,6 +152,7 @@ header #profilePicute {
 
     width: 15vw;
     height: 15vw;
+    display: block;
 }
 
 /*Styling the skylls section*/
@@ -284,17 +285,19 @@ footer {
 }
 
 footer p {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 footer img {
 
     width: 2.5rem;
+    display: block;
 }
 
 footer #redes {
 
     margin: 0;
+    height: 4rem;
 }
 
 footer a, footer #redes a {

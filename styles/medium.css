@@ -35,12 +35,13 @@
 
     #menu img {
 
-        width: 5rem;
+        width: 4rem;
     }
 
     .logo {
 
         width: 5rem;
+        display: block;
     }
 
     #menu ul {
@@ -73,7 +74,7 @@
 
     #hero button {
 
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 10%;
     }
 
@@ -92,12 +93,11 @@
 
         display: flex;
         width: fit-content;
-        margin: 2vw;
+        margin: 0 4vw;
     }
 
     #redes a {
 
-        
         width: -webkit-fill-available;
         margin: 0 .5rem;
         display: inline-block;
@@ -105,8 +105,9 @@
 
     #redes img {
 
-        width: 4rem;
+        width: 3rem;
         height: auto;
+        display: block;
     }
 
     /*My skills section*/
@@ -175,5 +176,8 @@
         font-size: 1.5rem;
     }
 
-    
+    footer p {
+        
+        padding: 0;
+    }
 }
