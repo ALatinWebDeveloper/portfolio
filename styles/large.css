@@ -29,12 +29,13 @@
 
     #menu img {
 
-        width: 5em;
+        width: 4em;
     }
 
     #menu ul {
 
-        font-size: 2rem;
+        font-size: 1.5rem;
+
     }
 
     #menu ul a {
@@ -56,7 +57,7 @@
 
     h1, h2 {
 
-        font-size: 6em;
+        font-size: 5em;
     }
 
     #hero {
@@ -69,13 +70,13 @@
 
     #hero button {
 
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 5rem;
     }
 
     header #profilePicute {
 
-        width: 34vw;
+        width: 33vw;
         margin: 0;
         animation-name: fadeInRight;
         animation-duration: 1.5s;
